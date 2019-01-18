@@ -1,0 +1,38 @@
+/* Left column */
+.leftcolumn { 
+  float:center;
+  align-self:center;
+  width: 80%;
+  padding-left: 40px;
+}
+
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  height:200px;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, { 
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        function validateForm() {
+
+            var x = document.forms["login_form"]["email"].value;
+            var y = document.forms["login_form"]["password"].value;
+
+            if(x=="")
+            {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            if(y=="")
+            {
+                alert("Password must be filled out");
+                return false;
+            }
+        }
+       </script>
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="login-dark">
+        <form method="post" name="login_form" action="assets/php/login.php" onsubmit="return validateForm()">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" /></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div>
+            <div class="form-group"><button class="btn btn-danger btn-block" type="reset">Reset</button></div>
+            <a href="#" class="forgot">Forgot your email or password?</a>
+            <a href="../signup_page/signup_page.html" class="forgot">Don't have a account.. Create an account.</a>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+
+our project name is CBC news and it displays news related to business,lifestyles,education and politics.
+
+our main page is index.php. database is connected to index.php.
+to access the admin panel please enter the nsbm@nsbm.lk as the username and nsbm123 as the password.
+Thank you
+
+github link= https://github.com/pms141/WebAssignment-CBC-News
+
+

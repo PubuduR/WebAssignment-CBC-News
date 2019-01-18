@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   
+  
+   
+   
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(202, 37, 37);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(44, 5, 5)
+}
+</style>
+</head>
+<body background="im2.jpeg">
+
+<ul>
+  <li><a class="active" href="#home">Myadmin</a></li>
+  <li><a href="#index.html">Dashboard</a></li>
+  <li><a href="#pages.html">Pages</a></li>
+  <li><a href="#posts.html">Posts</a></li>
+  <li><a href="#users.html">Users</a></li>
+  <li style="float:right"><a class="active" href="#users.html">Welcome user</a></li>
+
+  <li style="float:right"><a class="login.html" href="index.html">Logout</a></li>
+</ul>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .box {
+    float: left;
+    width: 33.33%;
+    padding: 1px;
+
+  }
+  
+
+  .box p {
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 0.1px 0.1px;
+  font-weight:bold;
+  text-decoration: none;
+  }
+  
+    </style>
+  
+  
+  
+  <table style="width:100%" >
+    
+   
+  
+
+</body>
+</html>
+
+    
+      <th colspan="4" bgcolor="Black" height="40">Dashboard</th>
+    </tr>
+  </table>
+ 
+  <table align="right" style="width:75%" cellspacing="10">
+  
+      
+        
+  
+    
+      <th colspan="8" bgcolor="red" height="25" width="170">Website overview</th>
+    </tr>
+    <tr>
+
+      <td bgcolor="#f2e8e6" height="120" width="120">
+        <table><tr><td><img src="user.png" align="center" width="40" height="40"></td></tr><tr><td></td></tr></table>
+      </div>
+      
+      <td bgcolor="#f2e8e6" height="120" width="120">
+          <table><tr><td><img src="pages.jpeg" width="40" height="40"></td></tr><tr><td></td></tr></table>
+          <tr>
+          <th colspan="8" bgcolor="red" height="25" width="170">Website overview</th>
+       </tr>
+</td>   
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    
+     .footer {
+      background-color: rgb(17, 16, 16);
+      color: rgb(241, 234, 234);
+      padding: 1px;
+    }
+    
+    .table{
+      float: center;
+    }
+    
+    .column {
+      float: left;
+      padding: 15px;
+    }
+    
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .menu {
+      width: 35%;
+    }
+    
+    .content {
+      width: 75%;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      color:aqua
+      margin: 0;
+      padding: 0;
+    
+    }
+    
+    .menu li {
+      padding: 16px;
+      margin-bottom: 5px;
+      background-color: #f7fafc;
+      color: #1f1d1d;
+    
+    }
+    
+    
+    </style>
+    </head>
+    <body>
+    <div class="menu ul">
+      <table><tr>
+        <td><h4><a href="index.html">Dashboard</a></td><td><a href="index.html"><img src="set.png" width="40" height="40"></a></h4></td></tr>
+<tr>
+<td><h4><a href="pages.html">Pages</a></td><td><a href="pages.html"><img src="pages.jpeg" width="40" height="40"></a></h4></td></tr>
+<tr>
+  
+
+<td><h4><a href="posts.html">Create</a></td><td><a href="posts.html"><img src="pencil.png" width="40" height="40"></a></h4></td></tr>
+<tr>
+  
+
+  <td><h4><a href="users.html">users</a></td><td><a href="users.html"><img src="user.png" width="40" height="40"></a></h4></td></tr>
+
+  <tr>
+  
+
+    <td><h4><a href="emails.html">emails</a></td><td><a href="emails.html"><img src="mail.jpeg" width="40" height="40"></a></h4></td></tr>    
+        
+        
+        </table>
+      </div>
+            
+   
+    
+    
+
+   
+    
+
+</body>
+</html>
