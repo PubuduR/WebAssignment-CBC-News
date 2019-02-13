@@ -46,7 +46,7 @@
     
           <td bgcolor=" #2baeb2" height="120" width="120">
     
-    <table border="1"><tr><td><img src="select.png" align="center" width="40" height="40"><td width="360">User name</td><td width="360">Email ID</td></tr>
+    <table border="1"><tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td width="360">User name</td><td width="360">Email ID</td></tr>
     <tr><td></td><td>
     <?php
             
@@ -95,7 +95,7 @@
           </td>
         </tr>
 
-    <tr><td><img src="red.png" align="center" width="40" height="40"><td width="360"></td><td width="360"></tr></table>
+    <tr><td><img src="assets/img/red.png" align="center" width="40" height="40"><td width="360"></td><td width="360"></tr></table>
     
             
       
@@ -109,27 +109,30 @@
     <body>
     <div class="menu ul">
       <table width="290"><tr bgcolor="  #177df6 ">
-        <td ><h4><a href="index.php">Dashboard</a></td><td><a href="index.php"><img src="set.png" width="40" height="40"></a></h4></td></tr>
+        <td ><h4><a href="index.php">Dashboard</a></td><td><a href="index.php"><img src="assets/img/set.png" width="40" height="40"></a></h4></td></tr>
         <tr bgcolor="  #177df6  ">
-<td><h4><a href="create.php">Create</a></td><td><a href="create.php"><img src="delete.png" width="40" height="40"></a></h4></td></tr>
+<td><h4><a href="create.php">Create</a></td><td><a href="create.php"><img src="assets/img/delete.png" width="40" height="40"></a></h4></td></tr>
+<tr bgcolor="  #177df6  ">
+<td><h4><a href="update.php">Update</a></td><td><a href="update.php"><img src="assets/img/update.png" width="40" height="40"></a></h4></td></tr>
+
 <tr bgcolor="  #177df6  " >
   
 
-<td><h4><a href="delete.php">Delete</a></td><td><a href="delete.php"><img src="pencil.png" width="40" height="40"></a></h4></td></tr>
+<td><h4><a href="delete.php">Delete</a></td><td><a href="delete.php"><img src="assets/img/pencil.png" width="40" height="40"></a></h4></td></tr>
 
   <tr bgcolor="  #177df6  ">
   
 
-    <td><h4><a href="emails.php">Subscribers</a></td><td><a href="emails.php"><img src="mail.jpeg" width="40" height="40"></a></h4></td></tr>    
+    <td><h4><a href="emails.php">Subscribers</a></td><td><a href="emails.php"><img src="assets/img/mail.jpeg" width="40" height="40"></a></h4></td></tr>    
         
     <tr bgcolor="  #177df6  ">
   
 
-  <td><h4><a href="users.php">Users</a></td><td><a href="users.php"><img src="user.png" width="40" height="40"></a></h4></td></tr>  
+  <td><h4><a href="users.php">Users</a></td><td><a href="users.php"><img src="assets/img/user.png" width="40" height="40"></a></h4></td></tr>  
   <tr bgcolor="  #177df6  ">
   
 
-  <td><h4><a href="messages.php">Messages</a></td><td><a href="messages.php"><img src="message.png" width="40" height="40"></a></h4></td></tr> 
+  <td><h4><a href="messages.php">Messages</a></td><td><a href="messages.php"><img src="assets/img/message.png" width="40" height="40"></a></h4></td></tr> 
         </table>
       </div>
             

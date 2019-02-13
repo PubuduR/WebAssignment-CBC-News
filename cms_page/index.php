@@ -10,7 +10,7 @@
   
   
 
-  <li style="float:right"><a class="login.php" href="assets/php/logout.php">
+  <li style="float:right"><a class="login.php" href="assets/php/logout.php">Logout</a></li></ul>
   
   <?php
 
@@ -48,13 +48,20 @@
     </tr>
     <tr>
 
-      <td bgcolor=" #2baeb2
+      <td bgcolor=" #0979b4
       " height="120" width="120">
-        <table><tr><td><img src="user.png" align="center" width="40" height="40"></td></tr><tr><td></td></tr></table>
+        <table><tr><td><img src="assets/img/user.png" align="center" width="40" height="40"></td></tr><tr><td></td></tr></table>
       </div>
       
-      <td bgcolor="#d43b26" height="120" width="120">
-          <table><tr><td><img src="pages.jpeg" width="40" height="40"></td></tr><tr><td></td></tr></table>
+      <td bgcolor=" #2db614 " height="120" width="120">
+          <table><tr><td><img src="assets/img/pages.jpeg" width="40" height="40"></td></tr><tr><td></td></tr></table>
+          <td bgcolor=" #d8b3e8 
+      " height="120" width="120">
+        <table><tr><td><img src="assets/img/message.png" align="center" width="40" height="40"></td></tr><tr><td></td></tr></table>
+      </div>
+      
+      <td bgcolor=" #9a2d22 " height="120" width="120">
+          <table><tr><td><img src="assets/img/subscribe.png" width="70" height="70"></td></tr><tr><td></td></tr></table>
       
        
 </td>   
@@ -63,20 +70,22 @@
     <body>
     <div class="menu ul">
       <table width="290"><tr bgcolor="  #177df6 ">
-        <td ><h4><a href="index.php">Dashboard</a></td><td><a href="index.php"><img src="set.png" width="40" height="40"></a></h4></td></tr>
+        <td ><h4><a href="index.php">Dashboard</a></td><td><a href="index.php"><img src="assets/img/set.png" width="40" height="40"></a></h4></td></tr>
 
         
         
 
 
         <tr bgcolor="  #177df6  ">
-        <td><h4><a href="create.php">create</a></td><td><a href="create.php"><img src="pencil.png" width="40" height="40"></a></h4></td></tr>
+        <td><h4><a href="create.php">create</a></td><td><a href="create.php"><img src="assets/img/pencil.png" width="40" height="40"></a></h4></td></tr>
+        <tr bgcolor="  #177df6  ">
+<td><h4><a href="update.php">Update</a></td><td><a href="update.php"><img src="assets/img/update.png" width="40" height="40"></a></h4></td></tr>
 
 <tr bgcolor="  #177df6  ">
   
 
   
-  <td><h4><a href="delete.php">Delete</a></td><td><a href="delete.php"><img src="delete.png" width="40" height="40"></a></h4></td></tr>
+  <td><h4><a href="delete.php">Delete</a></td><td><a href="delete.php"><img src="assets/img/delete.png" width="40" height="40"></a></h4></td></tr>
 
 
 
@@ -84,15 +93,15 @@
   <tr bgcolor="  #177df6  ">
   
 
-    <td><h4><a href="emails.php">Subscribers</a></td><td><a href="emails.php"><img src="mail.jpeg" width="40" height="40"></a></h4></td></tr>    
+    <td><h4><a href="emails.php">Subscribers</a></td><td><a href="emails.php"><img src="assets/img/mail.jpeg" width="40" height="40"></a></h4></td></tr>    
     <tr bgcolor="  #177df6  ">
   
 
-  <td><h4><a href="users.php">Users</a></td><td><a href="users.php"><img src="user.png" width="40" height="40"></a></h4></td></tr>    
+  <td><h4><a href="users.php">Users</a></td><td><a href="users.php"><img src="assets/img/user.png" width="40" height="40"></a></h4></td></tr>    
   <tr bgcolor="  #177df6  ">
   
 
-  <td><h4><a href="messages.php">Messages</a></td><td><a href="messages.php"><img src="message.png" width="40" height="40"></a></h4></td></tr> 
+  <td><h4><a href="messages.php">Messages</a></td><td><a href="messages.php"><img src="assets/img/message.png" width="40" height="40"></a></h4></td></tr> 
         
         </table>
       </div>

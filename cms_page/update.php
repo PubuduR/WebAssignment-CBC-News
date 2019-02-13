@@ -30,7 +30,7 @@
   <table align="right" style="width:75%" cellspacing="10">
   
 
-      <th colspan="8" bgcolor="#900C3F " height="45" width="170"><font color="white">INSERT</font></th>
+      <th colspan="8" bgcolor="#900C3F " height="45" width="170"><font color="white">UPDATE</font></th>
     </tr>
     <tr>
 
@@ -40,6 +40,15 @@
 
 <table>
 <form name=form1 method="POST" action="assets/php/insert.php" enctype="multipart/form-data">
+<table><tr><td><img src="assets/img/select.png" align="center" width="40" height="40"></td><td>update news</td><td>
+          <select name="post_del" style="width: 625px;">
+          <option value="Choose a Post"></option>
+     
+
+    </select>
+            
+<td></tr>
+        <tr><td></td><td></td><td><input type="submit" value="delete" name="delete"><input type="reset" value="Reset"></td></tr>
 <tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td> Title</td><td><input type="text" name="title" maxlength="40" size="100" ></td></tr>
 <tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Author</td><td><input type="text" name="author" maxlength="40" size="100" ></td></tr>
 <tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Description</td><td><input type="text" name="description"maxlength="40" size="100" ></td></tr>
