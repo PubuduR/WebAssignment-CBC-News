@@ -30,8 +30,8 @@
     <section id="carousel">
         <div class="carousel slide" data-ride="carousel" id="carousel-1">
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item" style="background-image: url('<?php include_once "assets/php/carosl1.php"; echo $row['img']?>')">
-                    <div class="jumbotron pulse animated business carousel-hero" >
+                <div class="carousel-item" >
+                    <div class="jumbotron pulse animated business carousel-hero" style="background-image: url('<?php include_once "assets/php/carosl1.php"; echo $row['img']?>')" >
                         
                         <h1 class="hero-title"><?php include_once "assets/php/carosl1.php"; echo $row["title"]?></h1>
                         <p class="hero-subtitle"><?php include_once "assets/php/carosl1.php"; echo substr($row["descript"],0,50);echo".....";?></p>
@@ -39,21 +39,21 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('<?php include_once "assets/php/carosl2.php"; echo $row['img']?>')">
-                    <div class="jumbotron pulse animated politics carousel-hero">
+                    <div class="jumbotron pulse animated politics carousel-hero" style="background-image: url('<?php include_once "assets/php/carosl2.php"; echo $row['img']?>')">
                         <h1 class="hero-title"><?php include_once "assets/php/carosl2.php"; echo $row["title"]?></h1>
                         <p class="hero-subtitle"><?php include_once "assets/php/carosl2.php"; echo substr($row["descript"],0,50);echo".....";?></p>
                         <p><a class="btn btn-primary hero-button plat" role="button" href="post_pagess/political.php">Learn more</a></p>
                     </div>
                 </div>
-                <div class="carousel-item " style="background-image: url('<?php include_once "assets/php/carosl3.php"; echo $row['img']?>')">
-                    <div class="jumbotron pulse animated education carousel-hero">
+                <div class="carousel-item ">
+                    <div class="jumbotron pulse animated education carousel-hero"  style="background-image: url('<?php include_once "assets/php/carosl3.php"; echo $row['img']?>')">
                         <h1 class="hero-title"><?php include_once "assets/php/carosl3.php"; echo $row["title"]?></h1>
                         <p class="hero-subtitle"><?php include_once "assets/php/carosl2.php"; echo substr($row["descript"],0,50);echo".....";?></p>
                         <p><a class="btn btn-primary hero-button plat" role="button" href="post_pages/education.php">Learn more</a></p>
                     </div>
                 </div>
-                <div class="carousel-item active" style="background-image: url('<?php include_once "assets/php/carosl4.php"; echo $row['img']?>')">
-                    <div class="jumbotron pulse animated lifstyle carousel-hero">
+                <div class="carousel-item active" >
+                    <div class="jumbotron pulse animated lifstyle carousel-hero" style="background-image: url('<?php include_once "assets/php/carosl4.php"; echo $row['img']?>')">
                         <h1 class="hero-title"><?php include_once "assets/php/carosl4.php"; echo $row["title"]?></h1>
                         <p class="hero-subtitle"><?php include_once "assets/php/carosl4.php"; echo substr($row["descript"],0,50);echo".....";?></p>
                         <p><a class="btn btn-primary hero-button plat" role="button" href="post_pages/education.php">Learn more</a></p>
