@@ -1,4 +1,4 @@
- <div>
+﻿ <div>
             <form action="assets/php/sub_insert.php" style="background-color:black" method="POST">
                     <div class="container">
                       <h2>Subscribe to our Newsletter</h2>
@@ -28,30 +28,23 @@
                     <div class="col-sm-4 col-md-3 item">
                         <h3>News</h3>
                         <ul>
-                            <li><a href="post_pages/business.php">Business</a></li>
-                            <li><a href="post_pages/politics.php">Politics</a></li>
-                            <li><a href="post_pages/education.php">Education</a></li>
-                            <li><a href="post_pages/lifestyle.php">Lifestyle</a></li>
+                            <li><a href="business.php">Business</a></li>
+                            <li><a href="politics.php">Politics</a></li>
+                            <li><a href="education.php">Education</a></li>
+                            <li><a href="lifestyle.php">Lifestyle</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>About</h3>
                         <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="contact.php">Contact us</a></li>
-                            <li><a href="about.php">Team</a></li>
-                            <li><a href="#">Join with CBC</a></li>
+                            <li><a href="../index.php">Company</a></li>
+                            <li><a href="../contact.php">Contact us</a></li>
+                            <li><a href="../about.php">Team</a></li>
+                            <li><a href="../signup_page/signup.php">Join with CBC</a></li>
 
                         </ul>
                     </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Advertise</h3>
-                        <ul>
-                            <li><a href="#">Rates</a></li>
-                            <li><a href="#">Magazine</a></li>
-                            <li><a href="#">Benefits</a></li>
-                        </ul>
-                    </div>
+                    
                     <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
                         <p class="copyright">Colombo Broadcasting Coperation (Pvt) Ltd � 2019</p>
                     </div>

@@ -36,7 +36,7 @@
     <div class="row">
             <div class="leftcolumn">
               <div class="card">
-                <<?php include 'assets/php/b_view.php';?>
+                <<?php include 'assets/php/l_view.php';?>
               </div>
               
             </div>

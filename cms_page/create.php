@@ -35,10 +35,25 @@ li a:hover {
 
 <ul>
   <li><a class="active" href="index.php">Myadmin</a></li>
-  <li><a href="index.html">Dashboard</a></li>
+  <li><a href="index.php">Dashboard</a></li>
   
-  <li style="float:right"><a class="" href="../index.php">Logout</a></li>
+  <li style="float:right"><a class="" href="assets/php/logout.php">
+
+ <?php
+
+  session_start();
+  if(isset($_SESSION['email']))
+  {
+  $emailSes=$_SESSION['email'];
+  echo "Logout $emailSes"; 
+  }
+  ?>
+
+
+</a></li>
 </ul>
+
+
 <style>
   * {
     box-sizing: border-box;
@@ -98,7 +113,7 @@ li a:hover {
 <form name=form1 method="POST" action="assets/php/insert.php" enctype="multipart/form-data">
 <tr><td><img src="select.png" align="center" width="40" height="40"><td> Title</td><td><input type="text" name="title" maxlength="40" size="100" ></td></tr>
 <tr><td><img src="select.png" align="center" width="40" height="40"><td>Author</td><td><input type="text" name="author" maxlength="40" size="100" ></td></tr>
-<tr><td><img src="select.png" align="center" width="40" height="40"><td>Description</td><td><input type="text" name="description"maxlength="40" size="100" ></td></tr>
+<tr><td><img src="select.png" align="center" width="40" height="40"><td>Description</td><td><input type="text" name="description" size="100" ></td></tr>
 <tr><td><img src="select.png" align="center" width="40" height="40"><td>category</td><td>
    <select name="categ" style="width: 625px;">
   <option value="Business">Business</option>

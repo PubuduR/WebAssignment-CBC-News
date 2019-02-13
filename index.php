@@ -30,33 +30,33 @@
     <section id="carousel">
         <div class="carousel slide" data-ride="carousel" id="carousel-1">
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item">
-                    <div class="jumbotron pulse animated business carousel-hero" style="background-image: url('<?php include "assets/php/carosl1.php"; echo $row['img']?>">
+                <div class="carousel-item" style="background-image: url('<?php include_once "assets/php/carosl1.php"; echo $row['img']?>')">
+                    <div class="jumbotron pulse animated business carousel-hero" >
                         
-                        <h1 class="hero-title"><?php include "assets/php/carosl1.php"; echo $row["title"]?></h1>
-                        <p class="hero-subtitle"><?php include "assets/php/carosl1.php"; echo substr($row["descript"],0,50);echo".....";?></p>
+                        <h1 class="hero-title"><?php include_once "assets/php/carosl1.php"; echo $row["title"]?></h1>
+                        <p class="hero-subtitle"><?php include_once "assets/php/carosl1.php"; echo substr($row["descript"],0,50);echo".....";?></p>
                         <p><a class="btn btn-primary hero-button plat" role="button" href="post_pages/business.php">Learn more</a></p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" style="background-image: url('<?php include_once "assets/php/carosl2.php"; echo $row['img']?>')">
                     <div class="jumbotron pulse animated politics carousel-hero">
-                        <h1 class="hero-title"><?php include "assets/php/carosl2.php"; echo $row["title"]?></h1>
-                        <p class="hero-subtitle"><?php include "assets/php/carosl2.php"; echo substr($row["descript"],0,50);echo".....";?></p>
-                        <p><a class="btn btn-primary hero-button plat" role="button" href="#">Learn more</a></p>
+                        <h1 class="hero-title"><?php include_once "assets/php/carosl2.php"; echo $row["title"]?></h1>
+                        <p class="hero-subtitle"><?php include_once "assets/php/carosl2.php"; echo substr($row["descript"],0,50);echo".....";?></p>
+                        <p><a class="btn btn-primary hero-button plat" role="button" href="post_pagess/political.php">Learn more</a></p>
                     </div>
                 </div>
-                <div class="carousel-item ">
+                <div class="carousel-item " style="background-image: url('<?php include_once "assets/php/carosl3.php"; echo $row['img']?>')">
                     <div class="jumbotron pulse animated education carousel-hero">
-                        <h1 class="hero-title"><?php include "assets/php/carosl3.php"; echo $row["title"]?></h1>
-                        <p class="hero-subtitle"><?php include "assets/php/carosl2.php"; echo substr($row["descript"],0,50);echo".....";?></p>
+                        <h1 class="hero-title"><?php include_once "assets/php/carosl3.php"; echo $row["title"]?></h1>
+                        <p class="hero-subtitle"><?php include_once "assets/php/carosl2.php"; echo substr($row["descript"],0,50);echo".....";?></p>
                         <p><a class="btn btn-primary hero-button plat" role="button" href="post_pages/education.php">Learn more</a></p>
                     </div>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item active" style="background-image: url('<?php include_once "assets/php/carosl4.php"; echo $row['img']?>')">
                     <div class="jumbotron pulse animated lifstyle carousel-hero">
-                        <h1 class="hero-title"><?php include "assets/php/carosl4.php"; echo $row["title"]?></h1>
-                        <p class="hero-subtitle"><?php include "assets/php/carosl4.php"; echo substr($row["descript"],0,50);echo".....";?></p>
-                        <p><a class="btn btn-primary hero-button plat" role="button" href="#">Learn more</a></p>
+                        <h1 class="hero-title"><?php include_once "assets/php/carosl4.php"; echo $row["title"]?></h1>
+                        <p class="hero-subtitle"><?php include_once "assets/php/carosl4.php"; echo substr($row["descript"],0,50);echo".....";?></p>
+                        <p><a class="btn btn-primary hero-button plat" role="button" href="post_pages/education.php">Learn more</a></p>
                     </div>
                 </div>
             </div>
@@ -86,17 +86,17 @@
                     <p class="text-center"> </p>
                 </div>
                 <div class="row articles">
-                    <div class="col-sm-6 col-md-4 item "><a href="post_pages/business.php"><img class="img-fluid" src="<?php include "assets/php/b1.php"; echo $row['img']?>"></a>
-                        <h3 class="name"><?php include "assets/php/b1.php"; echo $row["title"]?></h3>
-                        <p class="description"><?php include "assets/php/b1.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/business.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                    <div class="col-sm-6 col-md-4 item "><a href="post_pages/business.php"><img class="img-fluid" src="<?php include_once "assets/php/b1.php"; echo $row['img']?>"></a>
+                        <h3 class="name"><?php include_once "assets/php/b1.php"; echo $row["title"]?></h3>
+                        <p class="description"><?php include_once "assets/php/b1.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/business.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
                     <div
-                        class="col-sm-6 col-md-4 item"><a href="post_pages/business.php"><img class="img-fluid" src="<?php include "assets/php/b2.php"; echo $row['img']?>"></a>
-                        <h3 class="name"><?php include "assets/php/b2.php"; echo $row["title"]?></h3>
-                        <p class="description"><?php include "assets/php/b2.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/business.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                        class="col-sm-6 col-md-4 item"><a href="post_pages/business.php"><img class="img-fluid" src="<?php include_once "assets/php/b2.php"; echo $row['img']?>"></a>
+                        <h3 class="name"><?php include_once "assets/php/b2.php"; echo $row["title"]?></h3>
+                        <p class="description"><?php include_once "assets/php/b2.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/business.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
                 <div
-                    class="col-sm-6 col-md-6 item"><a href="post_pages/business.php"><img class="img-fluid" src="<?php include "assets/php/b3.php"; echo $row['img']?>"></a>
-                    <h3 class="name"><?php include "assets/php/b3.php"; echo $row["title"]?></h3>
-                    <p class="description"><?php include "assets/php/b3.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/business.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                    class="col-sm-6 col-md-6 item"><a href="post_pages/business.php"><img class="img-fluid" src="<?php include_once "assets/php/b3.php"; echo $row['img']?>"></a>
+                    <h3 class="name"><?php include_once "assets/php/b3.php"; echo $row["title"]?></h3>
+                    <p class="description"><?php include_once "assets/php/b3.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/business.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
         </div>
         </div>
         </div>
@@ -107,17 +107,17 @@
                 <p class="text-center"></p>
             </div>
             <div class="row articles">
-                <div class="col-sm-6 col-md-4 item"><a href="post_pages/politics.php"><img class="img-fluid" src="<?php include "assets/php/p1.php"; echo $row['img']?>"></a>
-                    <h3 class="name"><?php include "assets/php/p1.php"; echo $row["title"]?></h3>
-                    <p class="description"><?php include "assets/php/p1.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/politics.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-sm-6 col-md-4 item"><a href="post_pages/politics.php"><img class="img-fluid" src="<?php include_once "assets/php/p1.php"; echo $row['img']?>"></a>
+                    <h3 class="name"><?php include_once "assets/php/p1.php"; echo $row["title"]?></h3>
+                    <p class="description"><?php include_once "assets/php/p1.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/politics.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
                 <div
-                    class="col-sm-6 col-md-4 item"><a href="post_pages/politics.php"><img class="img-fluid" src="<?php include "assets/php/p2.php"; echo $row['img']?>"></a>
-                    <h3 class="name"><?php include "assets/php/p2.php"; echo $row["title"]?></h3>
-                    <p class="description"><?php include "assets/php/p2.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/politics.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                    class="col-sm-6 col-md-4 item"><a href="post_pages/politics.php"><img class="img-fluid" src="<?php include_once "assets/php/p2.php"; echo $row['img']?>"></a>
+                    <h3 class="name"><?php include_once "assets/php/p2.php"; echo $row["title"]?></h3>
+                    <p class="description"><?php include_once "assets/php/p2.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/politics.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
             <div
-                class="col-sm-6 col-md-6 item"><a href="post_pages/politics.php"><img class="img-fluid" src="<?php include "assets/php/p3.php"; echo $row['img']?>"></a>
-                <h3 class="name"><?php include "assets/php/p3.php"; echo $row["title"]?></h3>
-                <p class="description"><?php include "assets/php/p3.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/politics.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                class="col-sm-6 col-md-6 item"><a href="post_pages/politics.php"><img class="img-fluid" src="<?php include_once "assets/php/p3.php"; echo $row['img']?>"></a>
+                <h3 class="name"><?php include_once "assets/php/p3.php"; echo $row["title"]?></h3>
+                <p class="description"><?php include_once "assets/php/p3.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/politics.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
     </div>
     </div>
     </div>
@@ -128,17 +128,17 @@
                 <p class="text-center"> </p>
             </div>
             <div class="row articles">
-                <div class="col-sm-6 col-md-4 item"><a href="post_pages/education.php"><img class="img-fluid" src="<?php include "assets/php/e1.php"; echo $row['img']?>"></a>
-                    <h3 class="name"><?php include "assets/php/e1.php"; echo $row["title"]?></h3>
-                    <p class="description"><?php include "assets/php/e1.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/education.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-sm-6 col-md-4 item"><a href="post_pages/education.php"><img class="img-fluid" src="<?php include_once "assets/php/e1.php"; echo $row['img']?>"></a>
+                    <h3 class="name"><?php include_once "assets/php/e1.php"; echo $row["title"]?></h3>
+                    <p class="description"><?php include_once "assets/php/e1.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/education.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
                 <div
-                    class="col-sm-6 col-md-4 item"><a href="post_pages/education.php"><img class="img-fluid" src="<?php include "assets/php/e2.php"; echo $row['img']?>"></a>
-                    <h3 class="name"><?php include "assets/php/e2.php"; echo $row["title"]?></h3>
-                    <p class="description"><?php include "assets/php/e2.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/education.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                    class="col-sm-6 col-md-4 item"><a href="post_pages/education.php"><img class="img-fluid" src="<?php include_once "assets/php/e2.php"; echo $row['img']?>"></a>
+                    <h3 class="name"><?php include_once "assets/php/e2.php"; echo $row["title"]?></h3>
+                    <p class="description"><?php include_once "assets/php/e2.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/education.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
             <div
-                class="col-sm-6 col-md-6 item"><a href="post_pages/education.php"><img class="img-fluid" src="<?php include "assets/php/e3.php"; echo $row['img']?>"></a>
-                <h3 class="name"><?php include "assets/php/e3.php"; echo $row["title"]?></h3>
-                <p class="description"><?php include "assets/php/e3.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/education.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                class="col-sm-6 col-md-6 item"><a href="post_pages/education.php"><img class="img-fluid" src="<?php include_once "assets/php/e3.php"; echo $row['img']?>"></a>
+                <h3 class="name"><?php include_once "assets/php/e3.php"; echo $row["title"]?></h3>
+                <p class="description"><?php include_once "assets/php/e3.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/education.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
     </div>
     </div>
     </div>
@@ -149,17 +149,17 @@
                 <p class="text-center"> </p>
             </div>
             <div class="row articles">
-                <div class="col-sm-6 col-md-4 item"><a href="post_pages/lifestyle.php"><img class="img-fluid" src="<?php include "assets/php/l1.php"; echo $row['img']?>"></a>
-                    <h3 class="name"><?php include "assets/php/l1.php"; echo $row["title"]?></h3>
-                    <p class="description"><?php include "assets/php/l1.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/lifestyle.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                <div class="col-sm-6 col-md-4 item"><a href="post_pages/lifestyle.php"><img class="img-fluid" src="<?php include_once "assets/php/l1.php"; echo $row['img']?>"></a>
+                    <h3 class="name"><?php include_once "assets/php/l1.php"; echo $row["title"]?></h3>
+                    <p class="description"><?php include_once "assets/php/l1.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/lifestyle.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
                 <div
-                    class="col-sm-6 col-md-4 item"><a href="post_pages/lifestyle.php"><img class="img-fluid" src="<?php include "assets/php/l2.php"; echo $row['img']?>"></a>
-                    <h3 class="name"><?php include "assets/php/l2.php"; echo $row["title"]?></h3>
-                    <p class="description"><?php include "assets/php/l2.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/lifestyle.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                    class="col-sm-6 col-md-4 item"><a href="post_pages/lifestyle.php"><img class="img-fluid" src="<?php include_once "assets/php/l2.php"; echo $row['img']?>"></a>
+                    <h3 class="name"><?php include_once "assets/php/l2.php"; echo $row["title"]?></h3>
+                    <p class="description"><?php include_once "assets/php/l2.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/lifestyle.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
             <div
-                class="col-sm-6 col-md-6 item"><a href="post_pages/lifestyle.php"><img class="img-fluid" src="<?php include "assets/php/l3.php"; echo $row['img']?>"></a>
-                <h3 class="name"><?php include "assets/php/l3.php"; echo $row["title"]?></h3>
-                <p class="description"><?php include "assets/php/l3.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/lifestyle.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
+                class="col-sm-6 col-md-6 item"><a href="post_pages/lifestyle.php"><img class="img-fluid" src="<?php include_once "assets/php/l3.php"; echo $row['img']?>"></a>
+                <h3 class="name"><?php include_once "assets/php/l3.php"; echo $row["title"]?></h3>
+                <p class="description"><?php include_once "assets/php/l3.php"; echo substr($row["descript"],0,50);echo".....";?></p><a href="post_pages/lifestyle.php" class="action"><i class="fa fa-arrow-circle-right"></i></a></div>
     </div>
     </div>
     </div>

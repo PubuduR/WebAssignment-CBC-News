@@ -8,21 +8,28 @@
 
              if($resultCheck > 0) {
               
-                while ($row= mysqli_fetch_assoc($result))
-                {
-                 
-                  echo "<h2'>";
-                  echo   $row['title'];
-                  echo "</h2>";
-
-                  echo "<h5>";
-                  echo $row['descript'];
-                  echo "</h5>";
-
-                  echo"<div id='fakeimg'>"; 
-                  echo "<img src='".$row['img']."' >";
+              while($res = mysqli_fetch_assoc($result)) { 		
+                echo"<br>";
+                echo "<div class=container>";
+                echo "<div class=row>";
+                  echo " <div class=col-lg-12 mb-4>";
+                   echo " <div class=card h-100>";
+                
+                   
+                      echo "<img src='".$res['img']."' width='460' height='300'/>";
+                      echo "<h4 class=card-header>".$res['title']."</h4>";
+                            echo "<div class=card-body>";
+                            echo "<p class=card-text>".$res['descript']."</p>";
+                            echo "</div>";
+                      echo "<div class=card-footer>";
+                      echo "</div>";
+                    echo "</div>";
                   echo "</div>";
-              
+                echo "</div>";
+                echo "</div>"; 
+                echo "</br>";
+                
+             
               }
               }
               
