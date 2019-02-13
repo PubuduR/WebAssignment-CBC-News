@@ -36,7 +36,7 @@
         
   
     
-      <th colspan="8" bgcolor="#900C3F " height="45" width="170"><font color="white">emails</font></th>
+      <th colspan="8" bgcolor="#900C3F " height="45" width="170"><font color="white">messages</font></th>
     </tr>
     <tr>
 
@@ -46,7 +46,8 @@
     
           <td bgcolor=" #2baeb2" height="120" width="120">
     
-    <table border="1"><tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td width="360">User name</td><td width="360">Email ID</td></tr>
+    <table border="1"><tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td width="360">User name</td><td width="360">Email ID</td>
+    <td width="360">Subject</td><td width="360">Message</td></tr>
     <tr><td></td><td>
     <?php
             
@@ -93,8 +94,53 @@
           
             ?>
           </td>
-        </tr>
+          <td>
+          <?php
+            
+            include_once "assets/php/dbcon.php";
+            
+            $ql="SELECT * FROM subscribers"; 
+            $result=mysqli_query($con,$ql);
+            $resultCheck = mysqli_num_rows($result);
 
+           if($resultCheck > 0) {
+            
+              while ($row= mysqli_fetch_assoc($result))
+              {
+            
+                echo"<p>"; 
+                echo $row['email'];
+                echo "</p>";
+            
+            }
+            }          
+          
+            ?>
+          </td>
+          <td>
+          <?php
+            
+            include_once "assets/php/dbcon.php";
+            
+            $ql="SELECT * FROM subscribers"; 
+            $result=mysqli_query($con,$ql);
+            $resultCheck = mysqli_num_rows($result);
+
+           if($resultCheck > 0) {
+            
+              while ($row= mysqli_fetch_assoc($result))
+              {
+            
+                echo"<p>"; 
+                echo $row['email'];
+                echo "</p>";
+            
+            }
+            }          
+          
+            ?>
+          </td>
+</tr>
     <tr><td><img src="assets/img/red.png" align="center" width="40" height="40"><td width="360"></td><td width="360"></tr></table>
     
             
@@ -132,7 +178,7 @@
   <tr bgcolor="  #177df6  ">
   
 
-  <td><h4><a href="messages.php">Messages</a></td><td><a href="messages.php"><img src="assets/img/message.png" width="40" height="40"></a></h4></td></tr> 
+  <td><h4><a href="messages.php">Messages</a></td><td><a href="users.php"><img src="assets/img/message.png" width="40" height="40"></a></h4></td></tr> 
         </table>
       </div>
             
