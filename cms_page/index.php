@@ -7,11 +7,11 @@
 
 <ul>
   <li><a class="active" href="index.php">Myadmin</a></li>
-  <li><a href="index.php">Dashboard</a></li>
- 
+  
   
 
   <li style="float:right"><a class="login.php" href="assets/php/logout.php">
+  
   <?php
 
   session_start();
@@ -34,7 +34,7 @@
 </html>
 
     
-      <th colspan="4" bgcolor=" #eae5ed  " height="40" align="left">Dashboard</th>
+      <th colspan="4" bgcolor=" #eae5ed  " height="40" align="left"></th>
     </tr>
   </table>
  
@@ -70,12 +70,13 @@
 
 
         <tr bgcolor="  #177df6  ">
-<td><h4><a href="delete.php">Delete</a></td><td><a href="delete.php"><img src="delete.png" width="40" height="40"></a></h4></td></tr>
+        <td><h4><a href="create.php">create</a></td><td><a href="create.php"><img src="pencil.png" width="40" height="40"></a></h4></td></tr>
 
 <tr bgcolor="  #177df6  ">
   
 
-  <td><h4><a href="create.php">create</a></td><td><a href="create.php"><img src="pencil.png" width="40" height="40"></a></h4></td></tr>
+  
+  <td><h4><a href="delete.php">Delete</a></td><td><a href="delete.php"><img src="delete.png" width="40" height="40"></a></h4></td></tr>
 
 
 
@@ -84,7 +85,14 @@
   
 
     <td><h4><a href="emails.php">Subscribers</a></td><td><a href="emails.php"><img src="mail.jpeg" width="40" height="40"></a></h4></td></tr>    
-        
+    <tr bgcolor="  #177df6  ">
+  
+
+  <td><h4><a href="users.php">Users</a></td><td><a href="users.php"><img src="user.png" width="40" height="40"></a></h4></td></tr>    
+  <tr bgcolor="  #177df6  ">
+  
+
+  <td><h4><a href="messages.php">Messages</a></td><td><a href="messages.php"><img src="message.png" width="40" height="40"></a></h4></td></tr> 
         
         </table>
       </div>

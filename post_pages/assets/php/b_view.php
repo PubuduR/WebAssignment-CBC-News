@@ -19,6 +19,8 @@
                       echo "<img src='".$res['img']."' width='460' height='300'/>";
                       echo "<h4 class=card-header>".$res['title']."</h4>";
                             echo "<div class=card-body>";
+                             echo"<h6 class=card-subtitle mb-2 text-muted>"."By  ".$res['auth']." ".$res['d_time']."</h6>";
+                             echo "<br>";
                             echo "<p class=card-text>".$res['descript']."</p>";
                             echo "</div>";
                       echo "<div class=card-footer>";

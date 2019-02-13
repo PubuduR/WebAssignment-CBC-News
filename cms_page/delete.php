@@ -1,80 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-   
+  <link rel="stylesheet" href="assets/css/cms.css">
+</head>
   
    
    
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(21, 47, 71);
-}
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: rgb(44, 5, 5)
-}
-</style>
-</head>
 <body background="im2.jpeg">
 
 <ul>
   <li><a class="active" href="index.php">Myadmin</a></li>
-  <li><a class="active" href="index.php,">Dashboard</a></li>
   
   <li style="float:right"><a class="" href="index.php">Logout</a></li>
 </ul>
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  
-  .box {
-    float: left;
-    width: 33.33%;
-    padding: 1px;
 
-  }
-  
-
-  .box p {
-    display: block;
-  color: white;
-  text-align: center;
-  padding: 0.1px 0.1px;
-  font-weight:bold;
-  text-decoration: none;
-  }
-  
-    </style>
-  
-  
-  
-  <table style="width:100%" >
+<table style="width:100%" >
     
    
-  
-
-</body>
-</html>
-
+    </body>
+    </html>
     
-      <th colspan="4" bgcolor=" #eae5ed  " height="40" align="left">Dashboard</th>
+    
+      <th colspan="4" bgcolor=" #eae5ed  " height="40" align="left"></th>
     </tr>
   </table>
  
@@ -92,7 +41,7 @@ li a:hover {
 
       <form action="assets/php/delete.php" method="POST">
           <table><tr><td><img src="select.png" align="center" width="40" height="40"><td>
-          <select name="post_del" height="120" width="120">
+          <select name="post_del" style="width: 625px;">
           <option value="Choose a Post"></option>
       <?php
         include_once "assets/php/dbcon.php";
@@ -104,94 +53,44 @@ li a:hover {
         }
         ?>
 
-    </select></td></tr><tr><td></td></tr></table>
-            <br><br><br><br><br><br>
-            <br>
-            <br>
+    </select>
+            
 
-        <tr><td><img src="d.jpeg" align="center" width="40" height="40"><td><input type="submit" value="delete" name="delete"></td><td><input type="reset" value="Reset"></td></tr><tr><td></td></tr>
+        <tr><td><img src="d.jpeg" align="center" width="40" height="40"><td><input type="submit" value="delete" name="delete"></td><td><input type="reset" value="Reset"></td></tr>
         
-        
-        </table>
-        </form>
+       
       
+        </form>
+      </table>
       
       
        
 </td>   
 
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    
-     .footer {
-      background-color: rgb(17, 16, 16);
-      color: rgb(241, 234, 234);
-      padding: 1px;
-    }
-    
-    .table{
-      float: center;
-    }
-    
-    .column {
-      float: left;
-      padding: 15px;
-    }
-    
-    .clearfix::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    
-    .menu {
-      width: 35%;
-    }
-    
-    .content {
-      width: 75%;
-    }
-    
-    .menu ul {
-      list-style-type: none;
-      color:aqua
-      margin: 0;
-      padding: 0;
-    
-    }
-    
-    .menu li {
-      padding: 16px;
-      margin-bottom: 5px;
-      background-color: #f7fafc;
-      color: #1f1d1d;
-    
-    }
-    
-    
-    </style>
-    </head>
-    <body>
+ 
     <div class="menu ul">
       <table width="290"><tr bgcolor="  #177df6 ">
         <td ><h4><a href="index.php">Dashboard</a></td><td><a href="index.php"><img src="set.png" width="40" height="40"></a></h4></td></tr>
         <tr bgcolor="  #177df6  ">
-<td><h4><a href="delete.php">Delete</a></td><td><a href="delete.php"><img src="delete.png" width="40" height="40"></a></h4></td></tr>
+<td><h4><a href="create.php">Create</a></td><td><a href="create.php"><img src="delete.png" width="40" height="40"></a></h4></td></tr>
 <tr bgcolor="  #177df6  " >
   
 
-<td><h4><a href="create.php">Create</a></td><td><a href="create.php"><img src="pencil.png" width="40" height="40"></a></h4></td></tr>
+<td><h4><a href="delete.php">Delete</a></td><td><a href="delete.php"><img src="pencil.png" width="40" height="40"></a></h4></td></tr>
 
   <tr bgcolor="  #177df6  ">
   
 
     <td><h4><a href="emails.php">Subscribers</a></td><td><a href="emails.php"><img src="mail.jpeg" width="40" height="40"></a></h4></td></tr>    
-        
-        
+    <tr bgcolor="  #177df6  ">
+  
+
+  <td><h4><a href="users.php">Users</a></td><td><a href="users.php"><img src="user.png" width="40" height="40"></a></h4></td></tr>    
+  <tr bgcolor="  #177df6  ">
+  
+
+  <td><h4><a href="messages.php">Messages</a></td><td><a href="messages.php"><img src="message.png" width="40" height="40"></a></h4></td></tr>  
         </table>
       </div>
             
