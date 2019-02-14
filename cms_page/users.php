@@ -8,10 +8,18 @@
 <body background="im2.jpeg">
 
 <ul>
-  <li><a class="active" href="#home">Myadmin</a></li>
+  <li><a class="active" href="index.php">Myadmin</a></li>
   
 
-  <li style="float:right"><a class="login.html" href="index.html">Logout</a></li>
+  <li style="float:right"><a class="login.php" href="assets/php/logout.php"><?php
+
+  session_start();
+  if(isset($_SESSION['email']))
+  {
+  $emailSes=$_SESSION['email'];
+  echo "Logout $emailSes"; 
+  }
+  ?></a></li>
 </ul>
 
   
@@ -53,7 +61,7 @@
             
             include_once "assets/php/dbcon.php";
             
-            $ql="SELECT * FROM subscribers"; 
+            $ql="SELECT * FROM users"; 
             $result=mysqli_query($con,$ql);
             $resultCheck = mysqli_num_rows($result);
 
@@ -76,7 +84,7 @@
             
             include_once "assets/php/dbcon.php";
             
-            $ql="SELECT * FROM subscribers"; 
+            $ql="SELECT * FROM users"; 
             $result=mysqli_query($con,$ql);
             $resultCheck = mysqli_num_rows($result);
 

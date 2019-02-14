@@ -15,7 +15,10 @@ if($rowcount>0)
 }
 else
 {
-    echo "Access Deniedx";
+    echo '<script language="javascript">';
+        echo 'alert("Username or Password Incorrect, Access Denied")';
+        echo '</script>';
+        header( "refresh:2;url=../../login_page.html" );
 }
 
 

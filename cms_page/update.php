@@ -8,10 +8,24 @@
 
 <body background="im2.jpeg">
 
+<!--<script>
+
+var  submitForm=function(context,uri)
+{
+form = contenxt.parent;
+form.action= uri;
+form.submit();  
+  
+}
+
+
+
+</script>-->
+
 <ul>
   <li><a class="active" href="index.php">Myadmin</a></li>
   
-  <li style="float:right"><a class="" href="index.php">Logout</a></li>
+  <li style="float:right"><a class="login.php" href="assets/php/logout.php">Logout</a></li>
 </ul>
 
   
@@ -19,8 +33,7 @@
   <table style="width:100%" >
     
 
-</body>
-</html>
+
 
     
       <th colspan="4" bgcolor=" #eae5ed  " height="40" align="left"></th>
@@ -39,25 +52,37 @@
 
 
 <table>
-<form name=form1 method="POST" action="assets/php/insert.php" enctype="multipart/form-data">
+<form name=form1 method="POST" action="assets/php/update.php" enctype="multipart/form-data">
 <table><tr><td><img src="assets/img/select.png" align="center" width="40" height="40"></td><td>update news</td><td>
-          <select name="post_del" style="width: 625px;">
+          <select name="post_del" style="width: 670px;">
           <option value="Choose a Post"></option>
+          <?php
+        include_once "assets/php/dbcon.php";
+        $sql = mysqli_query($con, "SELECT title from posts");
+        $row=mysqli_num_rows($sql);
+        while($row = mysqli_fetch_array($sql))
+        {
+            echo "<option value='". $row['title'] ."'>" .$row['title'] ."</option>" ;
+        }
+        ?>
+
      
 
     </select>
             
-<td></tr>
-        <tr><td></td><td></td><td><input type="submit" value="delete" name="delete"><input type="reset" value="Reset"></td></tr>
-<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td> Title</td><td><input type="text" name="title" maxlength="40" size="100" ></td></tr>
-<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Author</td><td><input type="text" name="author" maxlength="40" size="100" ></td></tr>
-<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Description</td><td><input type="text" name="description"maxlength="40" size="100" ></td></tr>
+<td>
+<td><!--<input type="submit" value="view" name="view" onclick="submitForm(this,'update.php')"/>--></td>
+</tr>
+       
+<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td> Title</td><td><input type="text" name="title"  size="100" ></td></tr>
+<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Author</td><td><input type="text" name="author"size="100" ></td></tr><tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Description</td><td><input type="text" name="description" size="100" ></td></tr>
 <tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>category</td><td>
-   <select name="categ" style="width: 625px;">
+   <select name="categ" style="width: 670px;">
   <option value="Business">Business</option>
   <option value="Politics">Politics</option>
   <option value="Education">Education</option> 
   <option value="Lifestyle">Lifestyle</option>
+<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Description</td><td><textarea name = "description" rows="4" cols="50" size="1000"></textarea>
   
  
 
@@ -65,10 +90,11 @@
 
 </select></td><br>
 
-<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Image</td><td> <input type="file" name="image"maxlength="40" size="100" ></form></td>
+<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Image</td><td> <input type="file" name="image" maxlength="40" size="100" ></td>
 
 
-        <td><img src="assets/img/send.png" align="center" width="40" height="40"><td><input type="submit" value="submit" name="submit"></td></tr>
+        <td><img src="assets/img/send.png" align="center" width="40" height="40"><td><input type="submit" value="submit" name="submit" onclick=""></td>
+        <td><input type ="reset" value="reset" name="reset"></td></tr>
       
 </form>     
 </table>   

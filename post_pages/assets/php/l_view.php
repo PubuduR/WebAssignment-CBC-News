@@ -8,7 +8,7 @@
 
              if($resultCheck > 0) {
               
-                while ($row= mysqli_fetch_assoc($result))
+                while ($res= mysqli_fetch_assoc($result))
                 {
                  
                  echo"<br>";

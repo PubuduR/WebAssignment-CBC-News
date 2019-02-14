@@ -23,9 +23,11 @@
 
 <body>
 
-<?php include 'assets/includes/header.php'; ?>
+<div></div>
+    
+    <?php include 'assets/includes/header.php'; ?>
+
     <div class="container">
-   
     <div>
         <h3>CBC Politics</h3>
     </div>
@@ -33,26 +35,16 @@
     <div class="row">
             <div class="leftcolumn">
               <div class="card">
-                <?php include 'assets/php/p_view.php';?>
+                <<?php include 'assets/php/p_view.php';?>
               </div>
-             
+              
             </div>
             
           </div>
-        
-  </div>
-
-
-
-
-  <?php include 'assets/includes/footer.php'; ?>
-
-
-
-
-
-
-     
+    </div>
+          
+          <?php include 'assets/includes/footer.php'; ?>
+   
     <div></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

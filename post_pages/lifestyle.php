@@ -30,7 +30,7 @@
 
     <div class="container">
     <div>
-        <h3>CBC Lifestye</h3>
+        <h3>CBC Lifestyle</h3>
     </div>
 
     <div class="row">

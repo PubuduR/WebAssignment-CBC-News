@@ -10,7 +10,7 @@
   
   
 
-  <li style="float:right"><a class="login.php" href="assets/php/logout.php">Logout</a></li></ul>
+  <li style="float:right"><a class="login.php" href="assets/php/logout.php">
   
   <?php
 
@@ -50,18 +50,18 @@
 
       <td bgcolor=" #0979b4
       " height="120" width="120">
-        <table><tr><td><img src="assets/img/user.png" align="center" width="40" height="40"></td></tr><tr><td></td></tr></table>
+        <table><tr><td><img src="assets/img/user.png" align="center" width="40" height="40"></td></tr><tr><td><?php include_once "assets/php/no_users.php"; ?></td></tr></table>
       </div>
       
       <td bgcolor=" #2db614 " height="120" width="120">
-          <table><tr><td><img src="assets/img/pages.jpeg" width="40" height="40"></td></tr><tr><td></td></tr></table>
+          <table><tr><td><img src="assets/img/pages.jpeg" width="40" height="40"></td></tr><tr><td><?php include_once "assets/php/no_posts.php"; ?></td></tr></table>
           <td bgcolor=" #d8b3e8 
       " height="120" width="120">
-        <table><tr><td><img src="assets/img/message.png" align="center" width="40" height="40"></td></tr><tr><td></td></tr></table>
+        <table><tr><td><img src="assets/img/message.png" align="center" width="40" height="40"></td></tr><tr><td><?php include_once "assets/php/no_messages.php"; ?></td></tr></table>
       </div>
       
       <td bgcolor=" #9a2d22 " height="120" width="120">
-          <table><tr><td><img src="assets/img/subscribe.png" width="70" height="70"></td></tr><tr><td></td></tr></table>
+          <table><tr><td><img src="assets/img/subscribe.png" width="70" height="70"></td></tr><tr><td><?php include_once "assets/php/no_subscribers.php"; ?></td></tr></table>
       
        
 </td>   

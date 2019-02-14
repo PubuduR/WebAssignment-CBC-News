@@ -7,12 +7,12 @@
     $msg=$_POST["message"];
 
 
-    $sql="INSERT INTO contact (name,email,subj,msg) VALUES ('$Sname','$Smail','$Ssubj','$msg')";
+    $sql="INSERT INTO messages (user,email,subject,message) VALUES ('$Sname','$Smail','$Ssubj','$msg')";
 
     if(mysqli_query($con,$sql))
     {
         echo '<script language="javascript">';
-        echo 'alert("Subscribed Succesfuly")';
+        echo 'alert("We got your Message, Thank You!!!")';
         echo '</script>';
         header( "refresh:2;url=../../contact.php" );
     }

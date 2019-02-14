@@ -11,7 +11,18 @@
 <ul>
   <li><a class="active" href="index.php">Myadmin</a></li>
   
-  <li style="float:right"><a class="" href="index.php">Logout</a></li>
+  <li style="float:right"><a class="login.php" href="assets/php/logout.php">
+
+
+<?php
+
+  session_start();
+  if(isset($_SESSION['email']))
+  {
+  $emailSes=$_SESSION['email'];
+  echo "Logout $emailSes"; 
+  }
+  ?></a></li>
 </ul>
 
   
@@ -40,9 +51,9 @@
 
 <table>
 <form name=form1 method="POST" action="assets/php/insert.php" enctype="multipart/form-data">
-<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td> Title</td><td><input type="text" name="title" maxlength="40" size="100" ></td></tr>
-<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Author</td><td><input type="text" name="author" maxlength="40" size="100" ></td></tr>
-<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Description</td><td><input type="text" name="description"maxlength="40" size="100" ></td></tr>
+<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td> Title</td><td><input type="text" name="title"  size="100" ></td></tr>
+<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Author</td><td><input type="text" name="author"  size="100" ></td></tr>
+<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Description</td><td><textarea name = "description" rows="8" cols="50" size="1000"></textarea></tr>
 <tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>category</td><td>
    <select name="categ" style="width: 625px;">
   <option value="Business">Business</option>
@@ -56,7 +67,7 @@
 
 </select></td><br>
 
-<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Image</td><td> <input type="file" name="image"maxlength="40" size="100" ></form></td>
+<tr><td><img src="assets/img/select.png" align="center" width="40" height="40"><td>Image</td><td> <input type="file" name="image" size="100" ></td>
 
 
         <td><img src="assets/img/send.png" align="center" width="40" height="40"><td><input type="submit" value="submit" name="submit"></td></tr>
